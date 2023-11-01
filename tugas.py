@@ -13,16 +13,11 @@ while i < len(numbers):
 
 print("---nomer 2---")
 total = 0
-n = 1
 
-while n <= 20:
-    total += n
-    n += 2  
-
-print("Hasil jumlahanya adalah:", "1 +" , "3 +" ,"5 +" ,"7 +" "9 +" , "11 +" , "13 +" , "15 +" , "17 +" , "19 =", total)
-
-
-print("\n")   
+for n in range(1, 20, 2):
+    total+= n
+    print(n, end="+")
+print ("=", total)
 print("------------Soal Nomer 3------------") 
 
 jumlah_baris = int(input("Masukkan jumlah baris: "))
